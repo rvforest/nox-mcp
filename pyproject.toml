@@ -37,9 +37,9 @@ nox-mcp = "nox_mcp.server:mcp.run"
 
 [dependency-groups]
 dev = [
-  "mypy>=1.15.0",
   "nox>=2025.2.9",
   "pre-commit>=4.2.0",
+  "pyrefly>=0.43.1",
   "pytest>=8.3.5",
   "pytest-cov>=6.1.1",
   "ruff>=0.11.6",
@@ -60,6 +60,12 @@ exclude = ["tests/*"]
 [tool.ruff.lint]
 per-file-ignores = { "__init__.py" = ["F401"] }
 select = ["T100"]
+
+[tool.pyrefly]
+project-includes = [
+    "**/*.py*",
+    "**/*.ipynb",
+]
 
 [tool.hatch.version]
 source = "versioningit"

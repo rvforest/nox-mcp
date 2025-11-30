@@ -59,7 +59,7 @@ uv run pre-commit install
 | `uv run nox -s check` | Run all linting and type checks |
 | `uv run nox -s format` | Format code with Ruff |
 | `uv run nox -s lint` | Check linting issues |
-| `uv run nox -s types` | Run mypy type checking |
+| `uv run nox -s types` | Run pyrefly type checking |
 | `uv run nox -s docs` | Build documentation |
 | `uv run nox -s livedocs` | Live preview documentation |
 | `uv run nox -s coverage` | Run tests with coverage report |
